@@ -129,8 +129,44 @@ def team_4_adv():
 
 
 def team_5_adv():
-    pass
-    # TODO Add your code here
+    """
+    https://docs.google.com/document/d/1bCYJYtok5onV5DGtv9x4DXAgQ3yie-QJa_cHRUUtoNQ/edit?usp=sharing
+    Tallis Matus
+    Falsai Kimbugwe
+    :return:
+    """
+    global dead
+    print("you found a  girl chained to the wall. what do you do?")
+    choice = input("Choose from these choices: Free her, Move along, Get help")
+    if choice == "Free her":
+        # "Oh thank you!" says the girl. Now she is your responsibility
+        print("The girl is grateful. She offers help to lead you out of the labyrinth.")
+        sleep(delay)
+    elif choice == "Move along":
+        # Oh, you are a terrible human being. You refused to help a struggling girl
+        print("You follow the route taking you out the cave without any remorse to what you just did.")
+        sleep(delay)
+        # Giving the user a second chance.
+        print("You come across a pit. You hear something at the bottom of it")
+        choice2 = input("Do you Jump forward or Turn back")
+        if choice2 == "Jump forward":
+            sleep(delay)
+            print("Oh no.")
+            print("You fall into a pond full of hungry alligators who rip you into pieces once you reach the bottom.")
+            dead = True
+        else:
+            print("You decide to not jump across the pit. You go back to where you were, the girl is already gone.")
+            sleep(delay)
+    else:
+        # What a human? You are showing empathy and character.
+        print("You realise you can not help the girl, so you decide to go get help.")
+        print("As you walk a bit, you remember that you are there by yourself and the girl in the labyrinth")
+        print("You turn to look at the girl to figure it out and boom, the girl is gone.")
+        print("Now you are all alone. scared and wanting help to be out of this nightmare.")
+        sleep(delay)
+    if dead == True:
+        print("Oh no. You have died. Try again with a different choice tomorrow.")
+        quit()
 
 
 def team_6_adv():
