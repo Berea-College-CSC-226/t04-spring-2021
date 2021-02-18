@@ -119,8 +119,50 @@ def team_2_adv():
 
 
 def team_3_adv():
-    pass
-    # TODO Add your code here
+    """""
+    https://docs.google.com/document/d/1LlQ1Esbro-cAhvMp-DPGm2-ajqDeqIyDS6K2ma1YwlQ/edit?ts=602e703f#
+    """
+
+
+print()
+print(
+    "You Enter a forest temple, the doors close behind you and uo ahead is a knight fully armored and taking a fighting stance.")
+print("There is a treasure chest behind him filled to the brim with gold and other goodies")
+print()
+print("In front of you are three different choices for weapons to fight the knight with")       # Start of the story plot
+sleep(delay * 2)
+print("1.Sword")
+print("2.Crossbow")
+print("3.Spear")
+
+weapon_Choice =input("Please enter which one:")                                                 # gives users the ability to pick the weapon
+
+if weapon_Choice == "3" or weapon_Choice == "spear" or weapon_Choice == "Spear":                # Best case scenario
+    print("You pick up the spear, throw it across the room right into the knights eye opening")
+    print("you render the knight unconsious and leave with the treasure behind him")
+elif weapon_Choice == "1" or weapon_Choice == "Sword" or weapon_Choice == "sword":              # Worst ca scenario
+    print("you pick up the sword and charge at the knight full speed")
+    print("The knight crushes you in combat and pins you down with his sword at your neck ")
+    print(
+        "He gives you one last chance and if you can guess how many gold bars is in the chest with a differnce of 5 above or below")
+    # Hacker challenge
+
+    guess = int(input("Take your best guess:"))                                                 # Gives the user one last attempt to leave safely
+    if guess >= 15 and guess <= 25:
+        print("Amazing! your guess was correct, and the night lets you walk away")
+    else:
+        print("You guesss wrong, you die a slow and miserable death")
+        dead = True
+elif weapon_Choice == "2" or weapon_Choice == "crossbow" or weapon_Choice == "Crossbow":       # Neutral case scenario
+    print("You pick up the crossbow and start shooting arrows at the knight")
+    print(
+        "However, the arrows are useless to the knights armor \nSince you kept your distance you made a run for it and left the temple with no treasure")
+else:
+    print("Please enter a valid weapon choice! to try again press the green play button")      # account for user error
+
+if dead == True:
+    print("Oh no! You died. Better luck next time! Try again by hitting the green play button. ")
+    quit()
 
 
 def team_4_adv():
