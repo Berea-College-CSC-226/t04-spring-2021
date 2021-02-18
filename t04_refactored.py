@@ -137,10 +137,32 @@ else:
     print("you are safe. You've found a new place in the cave. Next, you have to find a way out \n")
 sleep(delay * 5)
 
-
 def team_2_adv():
-    pass
-    # TODO Add your code here
+    global dead
+    choice = input(
+        "You trip over something. You look down and see it's a box.  What do you do with it? [Open/Nothing/Carry]")
+    choice.lower()
+    if choice.lower() == "open":
+        # Good choice
+        print("You find a gift card to the Berea College Visitor Center! Neat!")
+        sleep(delay)
+    elif choice.lower() == "carry":
+        # Bad choice
+        print("You put the box in your backpack and keep walking.")
+        sleep(delay)
+        print("You walk a few steps and you begin to hear a mysterious ticking noise.")
+        print("The box is going to explode! Oh no!")
+        sleep(delay)
+        print("B O O M")
+        dead = True
+    else:
+        # Neutral choice
+        print(
+            "You keep walking. You're almost tempted to turn around and open the box, but you don't. Not today, Satan.")
+        sleep(delay)
+    if dead:
+        print("You died. Loser.")
+        quit()
 
 
 def team_3_adv():
