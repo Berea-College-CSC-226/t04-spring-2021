@@ -135,7 +135,24 @@ def team_5_adv():
 
 def team_6_adv():
     pass
-    # TODO Add your code here
+    """ google doc link:https://docs.google.com/document/d/1OIUxTwJOszrJMrQHqYuGBvy05NGGfQF24aFNgNDDL9w/edit?usp=sharing """
+    """ Beau Schneider/ Sabdi Lopez"""
+
+    user_input = input('you stubble opon an apple sitting on the ground. do you choose to eat it?  [yes/no/]')
+    if user_input == 'yes':
+        print('Good Choice! You eat the apple and it makes you super strong!')
+        sleep(delay)
+        print("")
+        print("")
+    elif user_input == 'no':
+        print('Oh no... you did not eat the apple!')
+        print('the apple has turned into a giant snaked and eaten you...')
+        print("")
+        print('Oh no! you died! try again by pressing the green play button in the top right corner!')
+        quit()
+    else:
+        print('continue on your journey...')
+        print("")
 
 
 def team_7_adv():
