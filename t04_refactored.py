@@ -21,7 +21,7 @@
 import random
 from time import sleep
 
-delay = 1.0          # change to 0.0 for testing/speed runs; larger for dramatic effect!
+delay = 0.0          # change to 0.0 for testing/speed runs; larger for dramatic effect!
 dead = False
 
 
@@ -144,8 +144,54 @@ def team_7_adv():
 
 
 def team_8_adv():
+    """https://docs.google.com/document/d/1JALo9o6gGmR0x8lk4ExV_OCZ8llaRirBdmbvQ8IKKeM/edit
+    Brady Bateman
+    batemanb """
+
+    global dead
+    print("")
+    print("You find a chest in the middle of the room.")
+
+    print("1. Check the room for traps. \n"
+          "2. Go straight towards the chest, disregarding all sense of caution! \n"
+          "3. Turn around. It's obviously a trick.")
+    chest = (input("What do you do? [1,2,3]"))
+
+    if (chest == "1") or (chest == "1."):
+        # neutral choice
+        print("You look around, noticing all sorts of deadly traps. Spike pits, trip wires, the whole shebang")
+        sleep(delay)
+        print("You carefully maneuver around the traps, and make it to the chest.")
+        print("To your surprise, the chest is a mimic. It gnarls its golden teeth at you \n"
+              "You fight off the mimic. Oh if only this wasn't a text game. I bet this fight looks awesome!")
+        print("You defeat the mimic, and take one of its teeth with you.")
+        sleep(delay)
+    elif (chest == "2") or (chest == "2."):
+        # good choice
+        print("I like your moxie, adventurer!\n"
+              "You run straight towards the chest, dodging traps and whatnot. \n"
+              "You open the chest, and stuff as much loot as you can into your pockets. \n"
+              "Yay, you got treasure! I hope it doesn't slow you down!")
+        sleep(delay / 2)
+        print("(It probably wont)")
+        sleep(delay)
+    elif (chest == "3") or (chest == "3."):
+        # bad choice
+        print("You turn around, hoping to go back a chapter or something.")
+        sleep(delay)
+        print("On your way out the door, you trip over a wire.")
+        print("As thousands of arrows pierce through you, you take solace in the fact that you were right.")
+        dead = True
+    else:
+        # hopefully catch-all contingency, also death.
+        print("Oh come on! Are you too good for my three choices? You couldn't be bothered to type 1, 2, or 3? \n"
+              "I bet you think you're so clever. You're probably wondering what happens if you type something else. \n"
+              "Well, I don't like that. Rocks fall on you and you die. Or something, just know that you died!")
+        dead = True
+
+    kill_if_dead(dead)
+
     pass
-    # TODO Add your code here
 
 
 def team_9_adv():
