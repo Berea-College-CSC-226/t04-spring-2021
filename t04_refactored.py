@@ -139,8 +139,31 @@ def team_6_adv():
 
 
 def team_7_adv():
+    """https://docs.google.com/document/d/1xX3LFlyEv8COTRD6cXeQ8j0J-84W3V8S4ojz7PZPZ7A/edit
+    Luke Wilson
+    Malena Leon Hidalgo
+    :return:none
+    """
     pass
-    # TODO Add your code here
+    die = False
+    print("Now an evil spell has teleported you in a castle with monsters. Your goal is to escape!")
+
+    direction = input("You are in a dungeon, the door is open, what way do you go? [right, left, up, down]")
+    if direction == "right":
+        # good ending
+        print("You find the entrance to the castle door and escape!")
+
+    elif direction == "left":
+        # bad ending
+        print("A spooky skeleton finds you and shoots you with an arrow!")
+        die = True
+
+    else:
+        # neutral ending
+        print("A werewolf hurts you but you manage to escape!")
+
+    if die:
+        print("Oh no, you have died!")
 
 
 def team_8_adv():
