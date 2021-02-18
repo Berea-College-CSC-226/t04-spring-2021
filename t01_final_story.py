@@ -201,7 +201,7 @@ def team_3_adv():
     print("2.Crossbow")
     print("3.Spear")
 
-    weapon_Choice = int(input("Please enter the corresponding number:"))
+    weapon_Choice = int(input("Please enter which one:"))
     if weapon_Choice == 3:
         print("You pick up the spear, throw it across the room right into the knights eye opening")
         print("you render the knight unconsious and leave with the treasure behind him")
