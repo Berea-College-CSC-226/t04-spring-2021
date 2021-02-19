@@ -165,6 +165,46 @@ def team_2_adv():
         quit()
 
 
+def team_8_adv():
+    """
+    https://docs.google.com/document/d/1Rm2iB8QnGDavO6UBAkA-t-RlWoYDyNtz_LG90Y5BGdE/edit...
+    Michell Flores
+    Drape Williams
+    Jeremiah Wilkerson
+    :return: none
+    """
+    global dead
+    username = input("what is your name friend?")
+    print("welcome, ", username, " to the game of luck. ")
+    sleep(delay * 3)
+    print("You are now in a marketplace. An old man comes up, claiming he has magical pills that could "
+          "bring you fortune.")
+    print("However, one of the two pills could also lead to your death.")
+    sleep(delay * 2)
+    print("While explaining, he unfolds his hand to reveal two pills. A blue one and a red one")
+    color = input("it is up to you...Which one will you choose? [blue/red/none]")
+    if color == "red":
+        # choice that results in users death
+        print("you feel your chest get heavy. Your breathing becomes slower. ")
+        sleep(delay * 2)
+        print("You fall to the ground and life fades away.")
+        dead = True
+        if dead:
+            print("You died! Try again to see if you get lucky next time! ")
+            quit()
+    elif color == "blue":
+        # nothing
+        print("You took time to chose the blue pill. ")
+        print("After taking it, nothing happened and you continued on with your day.")
+    else:
+        # choice that brings user fortune
+        print("You thanked the man, but chose nothing. ")
+        sleep(delay * 2)
+        print("As you continued walking, you found a package full of money.")
+        print("Due to your humbleness in being thankful for what life has given you already, you ended up winning. ")
+        print("The money will feed your family for years to come!")
+
+
 def team_3_adv():
     """""
     https://docs.google.com/document/d/1LlQ1Esbro-cAhvMp-DPGm2-ajqDeqIyDS6K2ma1YwlQ/edit?ts=602e703f#
