@@ -138,6 +138,9 @@ else:
 sleep(delay * 5)
 
 def team_2_adv():
+    """ https://docs.google.com/document/d/1gCBRnLy2Da5-ANZcT1INm91kiV_XyYROD18iwMmUCHk/edit?usp=sharing
+        Collin Brown
+        Emmanuel Klinsmann """
     global dead
     choice = input(
         "You trip over something. You look down and see it's a box.  What do you do with it? [Open/Nothing/Carry]")
